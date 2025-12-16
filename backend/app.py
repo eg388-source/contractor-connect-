@@ -41,6 +41,22 @@ def create_app():
         db.session.add(user)
         db.session.commit()
         return jsonify({"message": "Registered successfully"}), 201
+    @app.get("/")
+    def home():
+        return jsonify({
+            "status": "ok",
+            "message": "ContractorConnect API is running"
+        }), 200
+
+    @app.get("/health")
+    def health():
+        return "OK", 200
+
+
+    @app.post("/api/auth/login")
+    def login():
+        data = request.get_json() or {}
+        ...
 
     @app.post("/api/auth/login")
     def login():
