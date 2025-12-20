@@ -1,0 +1,27 @@
+:root { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+body { margin: 0; background: #0b1020; color: #e8ecff; }
+a { color: inherit; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 14px; padding: 16px; }
+.row { display: grid; grid-template-columns: repeat(12, 1fr); gap: 14px; }
+.col-12{ grid-column: span 12; }
+.col-6{ grid-column: span 6; }
+.col-4{ grid-column: span 4; }
+.col-8{ grid-column: span 8; }
+@media (max-width: 850px){ .col-6,.col-4,.col-8{ grid-column: span 12; } }
+
+.topbar { position: sticky; top: 0; backdrop-filter: blur(10px); background: rgba(11,16,32,0.85); border-bottom: 1px solid rgba(255,255,255,0.08); z-index: 10; }
+.topbar-inner { display:flex; align-items:center; justify-content:space-between; gap:12px; padding: 14px 20px; max-width:1100px; margin:0 auto; }
+.brand { font-weight: 800; letter-spacing: 0.2px; }
+.btn { border: 1px solid rgba(255,255,255,0.15); background: rgba(255,255,255,0.08); color: #e8ecff; padding: 10px 12px; border-radius: 12px; cursor: pointer; font-weight: 600; }
+.btn:hover { background: rgba(255,255,255,0.12); }
+.btn.primary { background: rgba(120,160,255,0.22); border-color: rgba(120,160,255,0.35); }
+.btn.danger { background: rgba(255,120,120,0.20); border-color: rgba(255,120,120,0.30); }
+.input, select, textarea { width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.14); background: rgba(0,0,0,0.20); color: #e8ecff; outline: none; }
+label { font-size: 12px; opacity: 0.9; }
+h1,h2,h3{ margin: 0 0 10px; }
+.small { font-size: 12px; opacity: 0.85; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 10px; border-bottom: 1px solid rgba(255,255,255,0.10); text-align:left; }
+.pill { display:inline-block; padding: 4px 10px; border-radius: 999px; font-size: 12px; border: 1px solid rgba(255,255,255,0.14); background: rgba(255,255,255,0.06); }
+.flex { display:flex; gap: 10px; align-items:center; flex-wrap: wrap; }

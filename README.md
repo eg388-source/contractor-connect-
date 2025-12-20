@@ -1,12 +1,15 @@
-# ContractorConnect (Clean Starter)
+# ContractorConnect Frontend (React + Vite)
 
-This is a clean "square one" repo that deploys correctly.
+## Run locally
+```bash
+cd frontend
+npm install
+copy .env.example .env
+npm run dev
+```
+Then open: http://localhost:5173
 
-Backend on Render:
-- Root Directory: backend
-- Build: pip install -r requirements.txt
-- Start: gunicorn app:app --bind 0.0.0.0:$PORT
-- Env var: JWT_SECRET_KEY = any random string
-
-Test it:
-- https://<service>.onrender.com/health  -> OK
+### Set API URL
+In `.env` set:
+`VITE_API_URL=http://127.0.0.1:5000`
+(or your deployed backend URL)
