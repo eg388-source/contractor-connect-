@@ -330,8 +330,6 @@ def serialize_notification(n: Notification):
         "created_at": n.created_at.isoformat() if n.created_at else None,
     }
 
-app = create_app()
-
 import os
 
 app = create_app()
