@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ContractorConnect CRM Lite (Full Working App)
 
 ## What this includes
@@ -23,12 +24,18 @@ Backend: http://127.0.0.1:5000/api/health
 
 ### 2) Frontend
 Open a NEW terminal:
+=======
+# ContractorConnect Frontend (React + Vite)
+
+## Run locally
+>>>>>>> 166f992dea7a1eec725fd93f0f2ac0bef437b79c
 ```bash
 cd frontend
 npm install
 copy .env.example .env
 npm run dev
 ```
+<<<<<<< HEAD
 Frontend: http://localhost:5173
 
 ## Demo steps (for screenshots/video)
@@ -44,3 +51,11 @@ Frontend: http://localhost:5173
 
 ### Frontend Vercel env var
 Set: `VITE_API_URL=https://<your-backend-url>`
+=======
+Then open: http://localhost:5173
+
+### Set API URL
+In `.env` set:
+`VITE_API_URL=http://127.0.0.1:5000`
+(or your deployed backend URL)
+>>>>>>> 166f992dea7a1eec725fd93f0f2ac0bef437b79c

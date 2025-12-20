@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 node_modules/
 .env
 venv/
@@ -5,3 +6,26 @@ __pycache__/
 *.pyc
 backend/instance/*.db
 *.db
+=======
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+backend/venv/
+
+# Environment variables
+.env
+backend/.env
+
+# Database files
+backend/instance/
+*.db
+
+# OS junk
+.DS_Store
+Thumbs.db
+>>>>>>> 166f992dea7a1eec725fd93f0f2ac0bef437b79c
