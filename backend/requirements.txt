@@ -1,5 +1,4 @@
 Flask==3.0.3
-<<<<<<< HEAD
 flask-cors==4.0.1
 flask-sqlalchemy==3.1.1
 flask-jwt-extended==4.6.0
@@ -8,12 +7,3 @@ Werkzeug==3.0.3
 sendgrid==6.11.0
 twilio==9.3.1
 gunicorn
-=======
-Flask-Cors==4.0.1
-Flask-JWT-Extended==4.6.0
-Flask-SQLAlchemy==3.1.1
-gunicorn==23.0.0
-psycopg2-binary>=2.9.11
-python-dotenv==1.0.1
-Werkzeug==3.0.3
->>>>>>> 166f992dea7a1eec725fd93f0f2ac0bef437b79c
