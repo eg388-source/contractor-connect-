@@ -1,12 +1,8 @@
 services:
   - type: web
-    name: contractorconnect-backend
+    name: contractor-connect-backend
     env: python
-    plan: free
-    region: oregon
     rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT
-    envVars:
-      - key: JWT_SECRET_KEY
-        generateValue: true
+    startCommand: gunicorn app:app
+    autoDeploy: true
